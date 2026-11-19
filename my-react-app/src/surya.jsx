@@ -35,9 +35,15 @@ export const Login = () => {
 export const Flex = () => {
   return (
     <div className="flex-container">
-      <div className="flex-item1 flex-container"><div className="flex-item2">Item 1</div></div>
-      <div className="flex-item2 flex-container"><div className="flex-item3">Item 2</div></div>
-      <div className="flex-item3 flex-container"><div className="flex-item1">Item 3</div></div>
+      <div className="flex-item3 flex-container"><span className="title-store">store 1</span><div className="flex-item1 inner-text"> <span className=" title">Item 1</span> <span className=" subtitle">product-list</span></div></div>
+      <div className="flex-item3 flex-container "><span className="title-store">store 2</span><div className="flex-item1 inner-text"> <span className=" title">Item 2</span> <span className=" subtitle">product-list</span></div></div>
+      <div className="flex-item3 flex-container"><span className="title-store">store 3</span><div className="flex-item1 inner-text"> <span className="title">Item 3</span> <span className=" subtitle">product-list</span></div></div>
+      <div className="flex-item3 flex-container" id="store-4"><span className="title-store">store 4</span><div className="flex-item1 inner-text"> <span className="title">Item 4</span> <span className=" subtitle">product-list</span></div></div>
+      <div className="flex-item3 flex-container"><span className="title-store">store 5</span><div className="flex-item1 inner-text"> <span className="title">Item 5</span> <span className=" subtitle">product-list</span></div></div>
+      <div className="flex-item3 flex-container"><span className="title-store">store 6</span><div className="flex-item1 inner-text"> <span className="title">Item 6</span> <span className=" subtitle">product-list</span></div></div>
+      <div className="flex-item3 flex-container"><span className="title-store">store 7</span><div className="flex-item1 inner-text"> <span className="title">Item 7</span> <span className=" subtitle">product-list</span></div></div>
+      <div className="flex-item3 flex-container"><span className="title-store">store 8</span><div className="flex-item1 inner-text"> <span className="title">Item 8</span> <span className=" subtitle">product-list</span></div></div>
+      <div className="flex-item3 flex-container"><span className="title-store">store 9</span><div className="flex-item1 inner-text"> <span className="title">Item 9</span> <span className=" subtitle">product-list</span></div></div>
     </div>
   );
 }

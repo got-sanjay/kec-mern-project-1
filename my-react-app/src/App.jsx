@@ -6,6 +6,7 @@ import "./App.css";
 // import Demo from "./demo.jsx";
 import { Nav } from "./nav.jsx";
 import Comp, { Flex, Login } from "./surya.jsx";
+import { Footer } from "./footer.jsx";
 
 function App() {
   if (window.location.pathname == '/') {
@@ -34,7 +35,7 @@ function App() {
       <Login /> */}
       <Nav />
       <Flex />
-      
+      <Footer />
     </>
   );
   } else if (window.location.pathname == '/color-1') {
