@@ -7,6 +7,7 @@ import "./App.css";
 import { Nav } from "./nav.jsx";
 import Comp, { Flex, Login } from "./surya.jsx";
 import { Footer } from "./footer.jsx";
+import { UseStateComponent } from "./useStateUsingComponent/useStateC.jsx";
 
 function App() {
   if (window.location.pathname == '/') {
@@ -33,9 +34,11 @@ function App() {
       {/* <Demo /> */}
       {/* <Comp />
       <Login /> */}
-      <Nav />
+      {/* <Nav />
       <Flex />
-      <Footer />
+      <Footer /> */}
+      <UseStateComponent />
+
     </>
   );
   } else if (window.location.pathname == '/color-1') {
