@@ -33,18 +33,36 @@ export const Login = () => {
 }
 
 export const Flex = () => {
+  const object = {
+    "store1": {
+      "item1": "product-list"
+    },
+    "store2": {
+      "item1": "product-list"
+    },
+    "store3": {
+      "item1": "product-list"
+    },
+    "store4": {
+      "item1": "product-list"
+    }
+  };      
   return (
     <div className="flex-container">
-      <div className="flex-item3 flex-container"><span className="title-store">store 1</span><div className="flex-item1 inner-text"> <span className=" title">Item 1</span> <span className=" subtitle">product-list</span></div></div>
-      <div className="flex-item3 flex-container "><span className="title-store">store 2</span><div className="flex-item1 inner-text"> <span className=" title">Item 2</span> <span className=" subtitle">product-list</span></div></div>
-      <div className="flex-item3 flex-container"><span className="title-store">store 3</span><div className="flex-item1 inner-text"> <span className="title">Item 3</span> <span className=" subtitle">product-list</span></div></div>
-      <div className="flex-item3 flex-container" id="store-4"><span className="title-store">store 4</span><div className="flex-item1 inner-text"> <span className="title">Item 4</span> <span className=" subtitle">product-list</span></div></div>
-      <div className="flex-item3 flex-container"><span className="title-store">store 5</span><div className="flex-item1 inner-text"> <span className="title">Item 5</span> <span className=" subtitle">product-list</span></div></div>
-      <div className="flex-item3 flex-container"><span className="title-store">store 6</span><div className="flex-item1 inner-text"> <span className="title">Item 6</span> <span className=" subtitle">product-list</span></div></div>
-      <div className="flex-item3 flex-container"><span className="title-store">store 7</span><div className="flex-item1 inner-text"> <span className="title">Item 7</span> <span className=" subtitle">product-list</span></div></div>
-      <div className="flex-item3 flex-container"><span className="title-store">store 8</span><div className="flex-item1 inner-text"> <span className="title">Item 8</span> <span className=" subtitle">product-list</span></div></div>
-      <div className="flex-item3 flex-container"><span className="title-store">store 9</span><div className="flex-item1 inner-text"> <span className="title">Item 9</span> <span className=" subtitle">product-list</span></div></div>
+      {Object.entries(object).map(([store, items]) => (
+        <div className="flex-item3 flex-container" key={store}>
+          <span className="title-store">{store}</span>
+          {Object.entries(items).map(([item, product]) => (
+            <div className="flex-item1 inner-text" key={item}>
+              <span className="title">{item}</span>
+              <span className="subtitle">{product}</span>
+            </div>
+          ))}
+        </div>
+      ))}
     </div>
   );
 }
 
+
+     
